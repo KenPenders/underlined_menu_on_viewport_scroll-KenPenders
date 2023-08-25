@@ -1,0 +1,162 @@
+/* reset */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+
+/* Globale instellingen */
+*{
+    box-sizing: border-box;
+}
+a{
+    color: inherit; /* Inherit from body --> 'color:' */
+    font-family: 'Libre Baskerville', serif;
+    text-decoration: none;
+}
+img{ /* responsive images */
+    max-width: 100%;
+    height: auto;
+}
+body {
+    
+    font-size: 16px;
+    
+}
+
+/*Lettertypen*/
+h1 {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: normal;
+    font-size: 2rem;
+}
+p {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: normal;
+    font-size: 1.2rem;
+}
+
+
+/* Menu */ 
+#menu {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 1rem;
+}
+#menu li a {
+
+    color: white;
+    flex: 1 1 auto;
+    border: none;
+    padding: 1rem;
+
+
+    text-decoration: none;
+}
+#menu li.current a {
+    text-decoration: underline;
+}
+
+
+
+/*playlists*/
+#viewport-playlist0 {
+    background-color: hsl(222, 49%, 42%);
+}
+#viewport-playlist0 h1, #viewport-playlist0 p{
+    color: white;
+    margin-bottom: 5vh;
+    width: 40vw;
+}
+#viewport-playlist1 {
+    background-color: hsl(0, 92%, 74%);  
+}
+#viewport-playlist2 {
+    background-color: hsl(113, 55%, 56%);
+}
+#viewport-playlist3 {
+    background-color: hsl(16, 55%, 56%);
+}
+#viewport-playlist4 {
+    background-color: hsl(67, 55%, 56%);
+}
+
+.playlists {
+    height: 100vh;
+    padding: 10vw;
+}
+
+
+
+
+
+/* Keuze wrapper */
+#keuze-wrapper {
+    width: 40vw;
+    position: absolute;
+    right: 0vw;
+    top: 50vh;
+    transform: translate(0%,-50%);
+}
+#keuze-wrapper nav {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+.playlistKeuze {
+    width: 15vw;
+    height: 15vw;
+    color: white;
+    text-align: center;
+    line-height: 15vw;
+    margin: 0vh 2vw 2vw 0vw;
+    background-size: cover;
+    display: block;
+}
+#keuze1 {
+    background-image: url("../img/img-keuzePlaylist1.png");   
+}
+#keuze2 {
+    background-image: url("../img/img-keuzePlaylist2.png");
+}
+#keuze3 {
+    background-image: url("../img/img-keuzePlaylist3.png");
+}
+#keuze4 {
+    background-image: url("../img/img-keuzePlaylist4.png");
+}
+
+/* Counter and home button */
+#counterAndHome-wrapper {
+
+    position: fixed;
+    z-index: 1;
+    right: 2vw;
+    top: 2vh;
+    display: block;
+    width: 5vw;
+    color: white;
+    
+}
+#logo p{
+    position: fixed;
+    z-index: 1;
+    left: 2vw;
+    bottom: 2vh;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+#logo img{
+    position: absolute;
+    z-index: 1;
+    left: 2vw;
+    bottom: 10vh;
+    width: 10vw;
+}
+#counterAndHome-wrapper img {
+    cursor: pointer;
+}
+#counter-playlistInViewport {
+    font-family: Arial, Helvetica, sans-serif;
+}
