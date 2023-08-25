@@ -59,24 +59,24 @@ p {
 
 
 /*playlists*/
-#viewport-playlist0 {
+#section1 {
     background-color: hsl(222, 49%, 42%);
 }
-#viewport-playlist0 h1, #viewport-playlist0 p{
+#section1 h1, #section1 p{
     color: white;
     margin-bottom: 5vh;
     width: 40vw;
 }
-#viewport-playlist1 {
+#section2 {
     background-color: hsl(0, 92%, 74%);  
 }
-#viewport-playlist2 {
+#section3 {
     background-color: hsl(113, 55%, 56%);
 }
-#viewport-playlist3 {
+#section4 {
     background-color: hsl(16, 55%, 56%);
 }
-#viewport-playlist4 {
+#section5 {
     background-color: hsl(67, 55%, 56%);
 }
 

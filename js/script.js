@@ -36,11 +36,7 @@
                 $("#counter-sectionInViewport").text(VisiblePlaylistVid + "/" + playlistsTotal);
                 console.log(VisiblePlaylistVid + "/" + playlistsTotal);
                 
-                $('[href="#viewport-playlist'+ VisiblePlaylistVid + '"]').addClass("maakTekstRood")
                 
-                
-            }else {
-                $('[href="#viewport-playlist'+ VisiblePlaylistVid + '"]').removeClass("maakTekstRood");
             }
             
 
